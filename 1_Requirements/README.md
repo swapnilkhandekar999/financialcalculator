@@ -41,7 +41,7 @@ The 4 months is less than 5, so is rounded of to 10. Months more than 5 are roun
 
 For employees covered under the Act, the benefit of a lower denomination is given. Hence working days in a month are taken as 26 days instead of 30 days
 
-
+#### Reference: (https://www.bajajfinserv.in/gratuity-calculator)
 ## Cost and Features
 ![Description](Link to Pic)
 -- Content 
