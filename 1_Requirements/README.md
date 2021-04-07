@@ -26,7 +26,9 @@ These two categories cover both private as well as government employees. For gov
 > * Commission received on sales
 
 Example if you had been drawing Rs 80,000 as your last basic salary with 10 years 4 months of employment tenor then the gratuity amount you will receive as per the formula is
+
 Gratuity = Rs 80,000 x (15/26) x 10 = Rs 4.62 lakhs
+
 The 4 months is less than 5, so is rounded of to 10. Months more than 5 are rounded off to the next year.
 
 2. Category 2: Employees not covered under the Act
@@ -34,7 +36,8 @@ The 4 months is less than 5, so is rounded of to 10. Months more than 5 are roun
 > You can be paid a gratuity even if the organization is not covered under the Act. If that is the case. the number of working days in a month changes to 30 days instead of 26 days
 > ### ` Gratuity = Last drawn salary x (15/30) x Number of years of service `
 > In the above example, it your organization is not covered under the Act, then the calculation will be as follows
-> Gratuity Rs 80,000 x (15/30) x 10 = 4.00 lakhs
+> 
+> Gratuity = Rs 80,000 x (15/30) x 10 = 4.00 lakhs
 
 For employees covered under the Act, the benefit of a lower denomination is given. Hence working days in a month are taken as 26 days instead of 30 days
 
