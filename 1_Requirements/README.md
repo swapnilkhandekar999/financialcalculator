@@ -5,7 +5,7 @@ Gratuity is a cash benefit provided by an employer to an employee for the servic
 ## Research
 
 ### What is Gratuity Calculator
-You can use the gratuity calculator to estimate the amount of money you will receive if you are planning to leave a job after a minimum of five years of services or looking forward to your retirement. There are various rules for gratuity calculation that you should keep in mind beforehand. We will look at various rules that will help you estimate your gratuity amount so that you can plan your investments better upon receiving the money.
+You can use the gratuity calculator to estimate the amount of money you will receive if you are planning to leave a job after a minimum of five years of services or looking forward to your retirement. There are various rules for gratuity calculation that you should keep in mind beforehand.
 
 ### Gratuity Calculations Formula
 The gratuity rules and calculation are prescribed by the Payment of Gratuity Act, 1972. There are mainly two categories of calculations determined, as detailed below:
@@ -42,6 +42,7 @@ The 4 months is less than 5, so is rounded of to 10. Months more than 5 are roun
 For employees covered under the Act, the benefit of a lower denomination is given. Hence working days in a month are taken as 26 days instead of 30 days
 
 #### Reference: https://www.bajajfinserv.in/gratuity-calculator
+
 ## Cost and Features
 ![Description](Link to Pic)
 -- Content 
