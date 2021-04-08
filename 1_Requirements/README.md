@@ -75,10 +75,27 @@ For employees covered under the Act, the benefit of a lower denomination is give
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+|ID|Description|Status(Implemented/Future)|
+|:--:|:--:|:--:|
+|1|Gratuity Calculator|Not yet implemented|
+|2|FD maturity amount calculator|Not yet implemented|
+|3|ROI calculator|Not yet implemented|
+|4|EMI calculator|Not yet implemented|
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+ 
+| ID | Description | Status (Implemented/Future)|
+|:--:|:--:|:--:|
+|1|Menu of supported operations|Not yet implemented|
+|2|Function for gratuity calculation|Not yet implemented|
+|3|Function for FD|Not yet implemented|
+|4|Function for ROI|Not yet implemented|
+|5|Function for EMI|Not yet implemented|
+|6|Test cases for gratuity|Not yet implemented|
+|7|Test cases for FD|Not yet implemented|
+|8|Test cases for ROI|Not yet implemented|
+|9|Test cases for EMI|Not yet implemented|
+|10|Implementation testing|Not yet implemented|
+
