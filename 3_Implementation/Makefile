@@ -11,13 +11,12 @@ src/source.c
 # All test source files
 TEST_SRC = src/source.c\
 test/test.c\
-unity/unity.c\
+unity\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC	= -Iinc\
--Iunity\
+INC	= inc\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
