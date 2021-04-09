@@ -16,7 +16,7 @@ unity\
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
-INC	= inc\
+INC	= inc/header.h\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
