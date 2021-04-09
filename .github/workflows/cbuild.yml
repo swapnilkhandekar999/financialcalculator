@@ -1,10 +1,10 @@
-name: C/C++ CI
+name: C/C++ CI - Build Status
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
@@ -13,6 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      
-    - name: make all
-      run:  make -C 3_Implementation/ all
+    - name: make
+      run: make -C 3_Implementation/ all
