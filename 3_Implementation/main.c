@@ -47,7 +47,7 @@ void financial_calculator_menu(void)
     printf("\n5. Exit");
     printf("\n\tEnter your choice\n");
    
-    __fpurge(stdin);
+    fpurge(stdin);
     scanf("%d", &financial_calculator_operation);
 
     if(EXIT == financial_calculator_operation)
@@ -68,7 +68,7 @@ void financial_calculator_menu(void)
                 scanf("%d",&eligibility);
                 printf("\nPress Enter to continue\n"); 
                 printf("%Lf",gratuity_calculation(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_number_of_months,eligibility));
-                __fpurge(stdin);
+                fpurge(stdin);
                 getchar();
                 break;
             case FD:
@@ -80,7 +80,7 @@ void financial_calculator_menu(void)
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue\n"); 
                 printf("%Lf",fixed_deposit(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
-                __fpurge(stdin);
+                fpurge(stdin);
                 getchar();
                 break;
             case ROI:
@@ -92,7 +92,7 @@ void financial_calculator_menu(void)
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue\n"); 
                 printf("%Lf",roi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
-                __fpurge(stdin);
+                fpurge(stdin);
                 getchar();
                 break;
             case EMI:
@@ -104,7 +104,7 @@ void financial_calculator_menu(void)
                 printf("Enter rate of interest");
                 scanf("%f",&rate_of_interest);
                 printf("%Lf",emi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
-                __fpurge(stdin);
+                fpurge(stdin);
                 getchar();
                 break;
             case 5:
@@ -117,7 +117,7 @@ void financial_calculator_menu(void)
     else
     {
         printf("\n\t---Choice is not implemented yet---\nEnter to continue\n");
-        __fpurge(stdin);
+        fpurge(stdin);
         getchar();
         return;  
     }

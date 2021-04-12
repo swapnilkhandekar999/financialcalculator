@@ -15,6 +15,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 #include<stdio.h>
+#include<stdlib.h>
 
 /**
  * @brief Error values for financial calculator operations

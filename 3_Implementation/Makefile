@@ -5,25 +5,24 @@ PROJECT_NAME = financialcalculator
 BUILD = build
 
 # All source code files
-SRC = main.c\
-src/source.c
+SRC = main.c src\source.c
 
 # All test source files
 TEST_SRC = src/source.c\
 test/test.c\
 unity\
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
 
 # All include folders with header files
-INC	= inc/header.h\
+INC	= -Iinc -Iunity
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
 INCLUDE_LIBS = -lcunit
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
