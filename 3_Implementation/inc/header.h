@@ -45,8 +45,13 @@ typedef struct complex_t {
  * @param[out] gratuity_amount Pointer to store gratuity_amount
  * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
  */
-error_t gratuity_calculation(long double amount, int number_of_years, int number_of_months, int eligibility);
+long double gratuity_calculation(long double amount, int number_of_years, int number_of_months, int eligibility);
 
+long double fixed_deposit(long double amount,int number_of_years, float rate_of_interest);
+
+long double roi(long double amount,int number_of_years, float rate_of_interest);
+
+long double emi(long double amount,int number_of_years, float rate_of_interest);
 
 /**
  * @brief TODO Add the remaining functions

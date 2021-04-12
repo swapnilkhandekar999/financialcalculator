@@ -67,7 +67,7 @@ void financial_calculator_menu(void)
                 printf("\nEnter 1 if your organization consists of more than 10 employees else enter 0");
                 scanf("%d",&eligibility);
                 printf("\nPress Enter to continue\n"); 
-                gratuity_calculation(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_number_of_months,eligibility);
+                printf("%Lf",gratuity_calculation(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_number_of_months,eligibility));
                 __fpurge(stdin);
                 getchar();
                 break;
@@ -79,7 +79,7 @@ void financial_calculator_menu(void)
                 printf("Enter rate of interest for FD");
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue\n"); 
-                fixed_deposit(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("%Lf",fixed_deposit(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
                 __fpurge(stdin);
                 getchar();
                 break;
@@ -91,7 +91,7 @@ void financial_calculator_menu(void)
                 printf("Enter rate of interest");
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue\n"); 
-                roi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("%Lf",roi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
                 __fpurge(stdin);
                 getchar();
                 break;
@@ -103,7 +103,7 @@ void financial_calculator_menu(void)
                 printf("\nPress Enter to continue\n"); 
                 printf("Enter rate of interest");
                 scanf("%f",&rate_of_interest);
-                emi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("%Lf",emi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
                 __fpurge(stdin);
                 getchar();
                 break;

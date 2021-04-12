@@ -7,16 +7,13 @@ long double gratuity_calculation(long double amount, int number_of_years, int nu
 }
 
 long double fixed_deposit(long double amount,int number_of_years, float rate_of_interest){
-
-
+    return amount * ((1 + rate_of_interest/100) * number_of_years);
 }
 
 long double roi(long double amount,int number_of_years, float rate_of_interest){
-
-
+    return amount * ((1 + rate_of_interest/100) * number_of_years) - amount;
 }
 
 long double emi(long double amount,int number_of_years, float rate_of_interest){
-
-
+    return amount * rate_of_interest * (1+rate_of_interest)*number_of_years/((1+rate_of_interest)*number_of_years-1);
 }
