@@ -1,6 +1,6 @@
 /**
  * @file header.h
- * @author Swapnil Khandekar (you@domain.com)
+ * @author Swapnil Khandekar (swapnilkhandekar999@gmail.com)
  * @brief Functions to perform Gratuity Calculation
  * Fixed Deposit Maturity Amount Calculation
  * Return on Investment for Mutual Funds calculation
@@ -12,11 +12,14 @@
  * 
  */
 
+#ifndef HEADER_H
+#define HEADER_H
+#include<stdio.h>
+
 /**
  * @brief Error values for financial calculator operations
  * 
  */
-#define LL unsigned long long int
 typedef enum error_t {
     ERROR_DIV_BY_ZERO = -2, /**< Division by 0 error */
     ERROR_NULL_PTR = -1,    /**< Null pointer dereferncing error */
@@ -34,17 +37,20 @@ typedef struct complex_t {
 
 
 /**
-* @brief computes sum of teh two complex numbers
+* @brief computes gratuity of teh two complex numbers
  * 
- * @param[in] cnum1 Pointer to complex number1
- * @param[in] cnum2 Pointer to complex number2 
- * @param[out] csum Pointer to store the computed result
+ * @param[in] amount Pointer to amount
+ * @param[in] number_of_years Pointer to number_of_years
+ * @param[in] number_of_months Pointer to number_of_months
+ * @param[out] gratuity_amount Pointer to store gratuity_amount
  * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
  */
-error_t gratuity_calculation(LL basic_salary,int years);
+error_t gratuity_calculation(long double amount, int number_of_years, int number_of_months, int eligibility);
 
 
 /**
  * @brief TODO Add the remaining functions
  * 
  */
+
+#endif //HEADER_H
