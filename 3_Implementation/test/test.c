@@ -36,7 +36,7 @@ void test_gratuity(void) {
   TEST_ASSERT_EQUAL(10384, gratuity_calculation(3000,5,5,1));
   TEST_ASSERT_EQUAL(103846, gratuity_calculation(30000,5,5,1));
   TEST_ASSERT_EQUAL(1038461, gratuity_calculation(300000,5,5,1));
-  TEST_ASSERT_EQUAL(10384615, gratuity_calculation(3000000,5,5,1));
+  TEST_ASSERT_EQUAL(10384616, gratuity_calculation(3000000,5,5,1));
   TEST_ASSERT_EQUAL(0, gratuity_calculation(0,5,5,1));
   /* Dummy fail*/
   //TEST_ASSERT_EQUAL(15000, gratuity_calculation(30000,5,5,1));
@@ -45,7 +45,7 @@ void test_gratuity(void) {
 void test_fixed_deposit(void) {
   TEST_ASSERT_EQUAL(121306, fixed_deposit(100000,3,6.65));
   TEST_ASSERT_EQUAL(0, fixed_deposit(0,3,6.65));
-  TEST_ASSERT_EQUAL(121306, fixed_deposit(1000000,10,10));
+  TEST_ASSERT_EQUAL(2593743, fixed_deposit(1000000,10,10));
   
   /* Dummy fail*/
   //TEST_ASSERT_EQUAL(100, fixed_deposit(100000,3,6.65));

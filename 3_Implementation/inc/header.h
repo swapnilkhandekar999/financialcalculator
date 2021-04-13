@@ -21,21 +21,11 @@
  * @brief Error values for financial calculator operations
  * 
  */
-typedef enum error_t {
-    ERROR_DIV_BY_ZERO = -2, /**< Division by 0 error */
-    ERROR_NULL_PTR = -1,    /**< Null pointer dereferncing error */
-    SUCCESS = 0             /**< Compute operation is successful */
-}error_t;
-
-/**
- * @brief Structure for Complex number
- * 
- */
-typedef struct complex_t {
-    float real;         /**< real part of the complex number */
-    float imaginary;    /**< real part of the complex number */
-} complex_t;
-
+//typedef enum error_t {
+  //  ERROR_DIV_BY_ZERO = -2, /**< Division by 0 error */
+    //ERROR_NULL_PTR = -1,    /**< Null pointer dereferncing error */
+  //  SUCCESS = 0             /**< Compute operation is successful */
+//}error_t;
 
 /**
 * @brief computes gratuity of teh two complex numbers
@@ -46,13 +36,13 @@ typedef struct complex_t {
  * @param[out] gratuity_amount Pointer to store gratuity_amount
  * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
  */
-long double gratuity_calculation(long double amount, int number_of_years, int number_of_months, int eligibility);
+long int gratuity_calculation(long int amount, long int number_of_years, long int number_of_months, long int eligibility);
 
-long double fixed_deposit(long double amount,int number_of_years, float rate_of_interest);
+long int fixed_deposit(long int amount,long int number_of_years, float rate_of_interest);
 
-long double roi(long double amount,int number_of_years, float rate_of_interest);
+long int roi(long int amount,long int number_of_years, float rate_of_interest);
 
-long double emi(long double amount,int number_of_years, float rate_of_interest);
+long int emi(long int amount,long int number_of_years, float rate_of_interest);
 
 /**
  * @brief TODO Add the remaining functions

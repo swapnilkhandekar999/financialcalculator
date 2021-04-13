@@ -1,34 +1,39 @@
 #include<stdio.h>
 #include<math.h>
-
-long int gratuity_calculation(long double P, int n, int m,int e){
-    long int result=0;
-    if(m>=5)n++;
+long int result=0;
+//long int n=0; 
+long int gratuity_calculation(long int P, long int n, long int m,long int e){
+    //n=ny;
+    if(m>=5){n=n+1;}
     if(n<5){
         printf("\nTo be eligible for gratuity under the Gratuity Act,\n an employee needs to have at least five full years of service\n with the current employer, except in the event that an employee\n passes away or is rendered disabled due to accident or illness.\n In these cases, gratuity must be paid.\n");
     }
+
     if(e==1){
-        result = P*(15/26)*n;
+        printf("n %d",n);
+        printf("p %d",P);
+        long int result = P*((float)15/26)*n;
+        printf("\nresult%ld",result);
         return result;
     }
     else if(e==0){
-        result = P*(15/30)*n;
+        result =(P)*((float)15/30)*(n);
         return result;
     }
-    else printf("\nPlease try again");
+    //else {printf("\nPlease try again");return 0;}
 }
 
-long int fixed_deposit(long double P,int n, float r){
-    long int result = P*(pow((1+r/100),n));
+long int fixed_deposit(long int P,long int n, float r){
+    result = P*(pow((1+(float)r/100),n));
     return result;
 }
 
-long int roi(long double P,int n, float r){
-    long int result = P*(pow((1+r/100),n))-P;
+long int roi(long int P,long int n, float r){
+    result = P*(pow((1+(float)r/100),n))-P;
     return result;
 }
 
-long int emi(long double P,int n, float r){
-    long int result = P*r*(1+r)*n/((1+r)*n-1);
+long int emi(long int P,long int n, float r){
+    result = (float)((P*r*(1+r)*n)/((1+r)*n-1));
     return result;
 }
