@@ -38,7 +38,8 @@ int main(int argc, char *argv[])
 }
 
 void financial_calculator_menu(void)
-{
+{   
+    long int result=0;
     printf("\nSupported Financial Operations\n");
     printf("\n1. Gratuity Calculation for private sector employees"); 
     printf("\n2. Fix Deposit maturity amount Calculation");
@@ -66,8 +67,9 @@ void financial_calculator_menu(void)
                 scanf("%d%d",&number_of_years,&number_of_months);
                 printf("\nEnter 1 if your organization consists of more than 10 employees else enter 0");
                 scanf("%d",&eligibility);
-                printf("\nPress Enter to continue"); 
-                printf("\nGratuity amount is %ld\n",gratuity_calculation(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_number_of_months,eligibility));
+                printf("\nPress Enter to continue");
+                result=gratuity_calculation(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_number_of_months,eligibility); 
+                printf("\nGratuity amount is %ld\n",result);
                 fpurge(stdin);
                 getchar();
                 break;
@@ -78,8 +80,9 @@ void financial_calculator_menu(void)
                 scanf("%d",&number_of_years);
                 printf("\nEnter rate of interest for FD");
                 scanf("%f",&rate_of_interest);
-                printf("\nPress Enter to continue"); 
-                printf("\nMaturity amount is %ld\n",fixed_deposit(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
+                printf("\nPress Enter to continue");
+                result=fixed_deposit(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("\nMaturity amount is %ld\n",result);
                 fpurge(stdin);
                 getchar();
                 break;
@@ -91,7 +94,8 @@ void financial_calculator_menu(void)
                 printf("\nEnter rate of interest");
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue"); 
-                printf("\nROI is %ld\n",roi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
+                result=roi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("\nROI is %ld\n",result);
                 fpurge(stdin);
                 getchar();
                 break;
@@ -103,7 +107,8 @@ void financial_calculator_menu(void)
                 printf("\nEnter rate of interest");
                 scanf("%f",&rate_of_interest);
                 printf("\nPress Enter to continue"); 
-                printf("\nEMI is %ld\n",emi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest));
+                result=emi(*pointer_to_amount,*pointer_to_number_of_years,*pointer_to_rate_of_interest);
+                printf("\nEMI is %ld\n",result);
                 fpurge(stdin);
                 getchar();
                 break;
