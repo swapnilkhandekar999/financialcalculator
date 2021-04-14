@@ -1,5 +1,5 @@
-#include "C:\Users\swapn\Desktop\financialcalculator\3_Implementation\unity\unity.h"
-#include "C:\Users\swapn\Desktop\financialcalculator\3_Implementation\inc\header.h"
+#include "unity\unity.h"
+#include "inc\header.h"
 
 /* Modify these two lines according to the project */
 #define PROJECT_NAME "financialcalculator"
