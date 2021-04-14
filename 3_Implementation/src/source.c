@@ -6,14 +6,16 @@ long int gratuity_calculation(long int P, long int n, long int m,long int e){
     //n=ny;
     if(m>=5){n=n+1;}
     if(n<5){
-        printf("\nTo be eligible for gratuity under the Gratuity Act,\n an employee needs to have at least five full years of service\n with the current employer, except in the event that an employee\n passes away or is rendered disabled due to accident or illness.\n In these cases, gratuity must be paid.\n");
+        printf("\nTo be eligible for gratuity under the Gratuity Act");
+        printf("\n an employee needs to have at least five full years of service");
+        printf("\n with the current employer, except in the event that an employee");
+        printf("\n passes away or is rendered disabled due to accident or illness.");
+        printf("\n In these cases, gratuity must be paid.\n");
     }
 
     if(e==1){
-        printf("n %d",n);
-        printf("p %d",P);
         long int result = P*((float)15/26)*n;
-        printf("\nresult%ld",result);
+        //printf("\nresult%ld",result);
         return result;
     }
     else if(e==0){
