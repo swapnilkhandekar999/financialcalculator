@@ -1,6 +1,3 @@
-![Untitled Workspace (3)](https://user-images.githubusercontent.com/42568338/114152383-dc1de900-993b-11eb-9b55-5654dd1c6739.png)
-
-
 # Requirements
 ## Introduction
 Gratuity is a cash benefit provided by an employer to an employee for the services rendered to the organization. It is paid at the time of retirement, resignation, layoff or termination, provided the employee has completed five years of continuous services before leaving the organization. In certain cases, such as death or disablement, the rule of continuous 5 year service is relaxed.
@@ -52,7 +49,7 @@ For employees covered under the Act, the benefit of a lower denomination is give
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![Untitled Workspace (3)](https://user-images.githubusercontent.com/42568338/114152383-dc1de900-993b-11eb-9b55-5654dd1c6739.png)
 
 # 4W&#39;s and 1&#39;H
 
@@ -81,24 +78,24 @@ For employees covered under the Act, the benefit of a lower denomination is give
 
 |ID|Description|Status(Implemented/Future)|
 |:--:|:--:|:--:|
-|1|Gratuity Calculator|Not yet implemented|
-|2|FD maturity amount calculator|Not yet implemented|
-|3|ROI calculator|Not yet implemented|
-|4|EMI calculator|Not yet implemented|
+|1|Gratuity Calculator|Implemented|
+|2|FD maturity amount calculator|Implemented|
+|3|ROI calculator|Implemented|
+|4|EMI calculator|Implemented|
 
 
 ##  Low level Requirements:
  
 | ID | Description | Status (Implemented/Future)|
 |:--:|:--:|:--:|
-|1|Menu of supported operations|Not yet implemented|
-|2|Function for gratuity calculation|Not yet implemented|
-|3|Function for FD|Not yet implemented|
-|4|Function for ROI|Not yet implemented|
-|5|Function for EMI|Not yet implemented|
-|6|Test cases for gratuity|Not yet implemented|
-|7|Test cases for FD|Not yet implemented|
-|8|Test cases for ROI|Not yet implemented|
-|9|Test cases for EMI|Not yet implemented|
-|10|Implementation testing|Not yet implemented|
+|1|Menu of supported operations|Implemented|
+|2|Function for gratuity calculation|Implemented|
+|3|Function for FD|Implemented|
+|4|Function for ROI|Implemented|
+|5|Function for EMI|Implemented|
+|6|Test cases for gratuity|Implemented|
+|7|Test cases for FD|Implemented|
+|8|Test cases for ROI|Implemented|
+|9|Test cases for EMI|Implemented|
+|10|Implementation testing|Implemented|
 
