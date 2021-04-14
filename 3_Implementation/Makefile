@@ -1,5 +1,6 @@
 # Name of the project
-PROJECT_NAME = financialcalculator
+PROJ_NAME = financialcalculator
+TEST_PROJ_NAME = Test_$(PROJ_NAME)
 
 # Output directory
 BUILD = build
@@ -15,18 +16,17 @@ unity/unity.c \
 INC_H = inc
 INC_T = unity
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
 
 # All include folders with header files
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
+#PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
 # Document files
-DOCUMENTATION_OUTPUT = documentation/html
+#DOCUMENTATION_OUTPUT = documentation/html
 
 # Default target built
-$(PROJECT_NAME):all
+#$(PROJECT_NAME):all
 
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all
