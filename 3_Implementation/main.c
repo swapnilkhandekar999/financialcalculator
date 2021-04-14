@@ -1,4 +1,4 @@
-#include "inc\header.h"
+#include "header.h"
 
 /* Status of the operation requested */
 #define VALID   (1)
