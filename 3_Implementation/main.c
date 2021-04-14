@@ -93,7 +93,7 @@ void financial_calculator_menu(void)
                 printf("\nPress Enter to continue"); 
                 result=roi(amount,number_of_years,rate_of_interest);
                 printf("\nROI is %ld\n",result);
-                fpurge(stdin);
+                //fpurge(stdin);
                 getchar();
                 break;
             case EMI:
@@ -106,7 +106,7 @@ void financial_calculator_menu(void)
                 printf("\nPress Enter to continue"); 
                 result=emi(amount,number_of_years,rate_of_interest);
                 printf("\nEMI is %ld\n",result);
-                fpurge(stdin);
+                //fpurge(stdin);
                 getchar();
                 break;
             case 5:
@@ -119,7 +119,7 @@ void financial_calculator_menu(void)
     else
     {
         printf("\n\t---Choice is not implemented yet---\nEnter to continue\n");
-        fpurge(stdin);
+        //fpurge(stdin);
         getchar();
         return;  
     }
