@@ -11,7 +11,7 @@ INC_H = inc
 INC_T = unity
 
 ifdef OS
-   RM = del 
+   RM = rm 
    FixPath = $(subst /,\,$1)
    EXEC = exe
 else
@@ -28,6 +28,7 @@ all:
 	
 run:
 	$(call FixPath,$(PROJ_NAME).$(EXEC))
+
 test:
 	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC)) -lm
 	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
@@ -47,13 +48,13 @@ coverage:
 
 cppcheck:
 	cppcheck --enable=all $(SRC) main.c
+
 debug:
 	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC) -lm
 	gdb $(PROJ_NAME).$(EXEC)
 
 valgrind:
 	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
-
 
 clean:
 	$(RM) *.DAT

@@ -35,7 +35,6 @@ int main()
 
 void financial_calculator_menu(void)
 {   
-    long int result=0;
     printf("\nSupported Financial Operations\n");
     printf("\n1. Gratuity Calculation for private sector employees"); 
     printf("\n2. Fix Deposit maturity amount Calculation");
@@ -45,7 +44,7 @@ void financial_calculator_menu(void)
     printf("\n\tEnter your choice\n");
    
     //fpurge(stdin);
-    scanf("%d", &financial_calculator_operation);
+    scanf("%u", &financial_calculator_operation);
 
     if(EXIT == financial_calculator_operation)
     {
@@ -53,7 +52,8 @@ void financial_calculator_menu(void)
         exit(0);
     }
     if(INVALID != valid_operation(financial_calculator_operation))
-    {
+    {   
+        long int result=0;
         switch(financial_calculator_operation)
         {
             case GRATUITY:
@@ -65,7 +65,7 @@ void financial_calculator_menu(void)
                 printf("\nEnter 1 if your organization consists of more than 10 employees else enter 0");
                 scanf("%ld",&eligibility);
                 printf("\nPress Enter to continue");
-                long int result=gratuity_calculation(amount,number_of_years,number_of_months,eligibility); 
+                result=gratuity_calculation(amount,number_of_years,number_of_months,eligibility); 
                 printf("\nGratuity amount is %ld\n",result);
                // fpurge(stdin);
                 getchar();

@@ -14,7 +14,7 @@ long int gratuity_calculation(long int P, long int n, long int m,long int e){
     }
 
     if(e==1){
-        long int result = P*((float)15/26)*n;
+        result = P*((float)15/26)*n;
         //printf("\nresult%ld",result);
         return result;
     }
