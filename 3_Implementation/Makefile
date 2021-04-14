@@ -5,21 +5,19 @@ PROJECT_NAME = financialcalculator
 BUILD = build
 
 # All source code files
-SRC = main.c src\source.c
+SRC =src/source.c 
+
+COV_SRC = test.c
 
 # All test source files
-TEST_SRC = src/source.c\
-test/test.c\
-unity\
+TEST_SRC =test/test.c \
+unity/unity.c \
+INC_H = inc
+INC_T = unity
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
 
 # All include folders with header files
-INC	= -Iinc -Iunity
-
-#Library Inlcudes
-#INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
@@ -33,27 +31,44 @@ $(PROJECT_NAME):all
 # Run the target even if the matching name exists
 .PHONY: run clean test doc all
 
-all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+all:
+	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJ_NAME).$(EXEC))
 
 # Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+run:
+	$(call FixPath,$(PROJ_NAME).$(EXEC))
 
-# Document the code using Doxygen
-doc:
-	make -C ./documentation
+# Coverage
+coverage:
+	cp test/test.c .
+	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_PROJ_NAME).$(EXEC))
+	$(call FixPath, ./$(TEST_PROJ_NAME).$(EXEC))
+	gcov -a $(COV_SRC)
+	$(RM) *.$(EXEC)
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
+	$(RM) *.DAT
+	$(RM) test.c
 
 # Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
-	./$(TEST_OUTPUT)
+test:
+	gcc -I $(INC_H) -I $(INC_T) $(TEST_SRC) $(SRC) -o $(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
+	./$(call FixPath,$(TEST_PROJ_NAME).$(EXEC))
 
-# Remove all the built files, invoke by `make clean`
+cppcheck:
+	cppcheck --enable=all $(SRC) main.c
+debug:
+	gcc -I $(INC_H) $(SRC) main.c -g -o $(PROJ_NAME).$(EXEC)
+	gdb $(PROJ_NAME).$(EXEC)
+
+valgrind:
+	valgrind ./$(TEST_PROJ_NAME).$(EXEC)
+
+
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
-
-# Create new build folder if not present
-$(BUILD):
-	mkdir build
-
+	$(RM) *.DAT
+	$(RM) *.$(EXEC)
+	$(RM) *.gcda
+	$(RM) *.gcno
+	$(RM) *.c.gcov
