@@ -1,5 +1,5 @@
-#include "unity\unity.h"
-#include "inc\header.h"
+#include "unity.h"
+#include "header.h"
 
 /* Modify these two lines according to the project */
 #define PROJECT_NAME "financialcalculator"
