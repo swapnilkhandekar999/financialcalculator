@@ -52,16 +52,16 @@ void test_fixed_deposit(void) {
 }
 
 void test_roi(void) {
-  TEST_ASSERT_EQUAL(0, roi(100000,5,10));
+  TEST_ASSERT_EQUAL(0, roi(0,5,10));
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(10, roi(100000,5,10));
+  TEST_ASSERT_EQUAL(10, roi(0,5,10));
 }
 
 void test_emi(void) {
-  TEST_ASSERT_EQUAL(0, emi(100000,5,10));
+  TEST_ASSERT_EQUAL(0, emi(0,5,10));
   
   /* Dummy fail*/
-  TEST_ASSERT_EQUAL(1, emi(100000,5,10));
+  TEST_ASSERT_EQUAL(1, emi(0,5,10));
 }
 
