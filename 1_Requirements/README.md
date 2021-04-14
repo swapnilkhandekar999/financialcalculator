@@ -55,23 +55,23 @@ For employees covered under the Act, the benefit of a lower denomination is give
 
 ## Who:
 
-**TBD**
+Intended for people who want to know there gratuity amount or maturity amount of fixed deposit or return on investment or EMI
 
 ## What:
 
-**TBD**
+It provides you with quick calculation of services including Gratuity Calculator for employees of private sector in India, Fixed Deposit Maturity Amount Calculator, Return on Investment for Mutual Funds, EMI Calculator
 
 ## When:
 
-**TBD**
+When calculations listed here are frequently needed to be carried out
 
 ## Where:
 
-**TBD**
+Users can use this application on there desktop or laptop terminal
 
 ## How:
 
-**TBD**
+Users can simply double tap the program application file to run this application
 
 # Detail requirements
 ## High Level Requirements:
