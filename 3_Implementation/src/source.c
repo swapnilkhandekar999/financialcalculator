@@ -1,9 +1,7 @@
 #include<stdio.h>
 #include<math.h>
 long int result=0;
-//long int n=0; 
 long int gratuity_calculation(long int P, long int n, long int m,long int e){
-    //n=ny;
     if(m>=5){n=n+1;}
     if(n<5){
         printf("\nTo be eligible for gratuity under the Gratuity Act");
@@ -15,7 +13,6 @@ long int gratuity_calculation(long int P, long int n, long int m,long int e){
 
     if(e==1){
         result = P*((float)15/26)*n;
-        //printf("\nresult%ld",result);
         return result;
     }
     else if(e==0){
@@ -36,6 +33,14 @@ long int roi(long int P,long int n, float r){
 }
 
 long int emi(long int P,long int n, float r){
-    result = (float)((P*r*(1+r)*n)/((1+r)*n-1));
+    //result = (float)((P*r*(1+r)*n)/((1+r)*n-1));
+    //result= (float)(fixed_deposit(P,n,r))/(12*n);
+    //result=P*(r/12)*((float)pow((1+r/12),n*12)/(pow((1+r/12),(n*12))-1));
+    float R=0;
+    R=r/1200;
+    float N=0;
+    N=n*12;
+    long int res1=(long double)pow((1+R),N)/(pow((1+R),(N-1)));
+    result=(P * R * res1);
     return result;
 }

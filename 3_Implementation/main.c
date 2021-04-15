@@ -42,8 +42,6 @@ void financial_calculator_menu(void)
     printf("\n4. EMI Calculation");
     printf("\n5. Exit");
     printf("\n\tEnter your choice\n");
-   
-    //fpurge(stdin);
     scanf("%u", &financial_calculator_operation);
 
     if(EXIT == financial_calculator_operation)
@@ -57,56 +55,52 @@ void financial_calculator_menu(void)
         switch(financial_calculator_operation)
         {
             case GRATUITY:
-                printf("\nYou selected to calculate gratuity. Enter your last drawn salary");
+                printf("\nYou selected to calculate gratuity. Enter your last drawn salary\n");
                 scanf("%ld",&amount);
-                printf("\nEnter your service duration in years and months separated by space");
+                printf("\nEnter your service duration in years and months separated by space\n");
                 scanf("%ld",&number_of_years);
                 scanf("%ld",&number_of_months);
-                printf("\nEnter 1 if your organization consists of more than 10 employees else enter 0");
+                printf("\nEnter 1 if your organization consists of more than 10 employees else enter 0\n");
                 scanf("%ld",&eligibility);
-                printf("\nPress Enter to continue");
                 result=gratuity_calculation(amount,number_of_years,number_of_months,eligibility); 
                 printf("\nGratuity amount is %ld\n",result);
-               // fpurge(stdin);
+                printf("\nPress Enter to continue\n");
                 getchar();
                 break;
             case FD:
-                printf("\nYou selected to calculate maturity amount of Fixed deposit. Enter your principal amount");
+                printf("\nYou selected to calculate maturity amount of Fixed deposit. Enter your principal amount\n");
                 scanf("%ld",&amount);
-                printf("\nEnter tenur of Fixed Deposit");
+                printf("\nEnter tenur of Fixed Deposit\n");
                 scanf("%ld",&number_of_years);
-                printf("\nEnter rate of interest for FD");
+                printf("\nEnter rate of interest for FD\n");
                 scanf("%f",&rate_of_interest);
-                printf("\nPress Enter to continue");
                 result=fixed_deposit(amount,number_of_years,rate_of_interest);
                 printf("\nMaturity amount is %ld\n",result);
-                //fpurge(stdin);
+                printf("\nPress Enter to continue\n");
                 getchar();
                 break;
             case ROI:
-                printf("\nYou selected to calculate Return on investment for Mutual Funds. Enter your principal amount");
+                printf("\nYou selected to calculate Return on investment for Mutual Funds. Enter your principal amount\n");
                 scanf("%ld",&amount);
-                printf("\nEnter tenur in years");
+                printf("\nEnter tenur in years\n");
                 scanf("%ld",&number_of_years);
-                printf("\nEnter rate of interest");
+                printf("\nEnter rate of interest\n");
                 scanf("%f",&rate_of_interest);
-                printf("\nPress Enter to continue"); 
                 result=roi(amount,number_of_years,rate_of_interest);
                 printf("\nROI is %ld\n",result);
-                //fpurge(stdin);
+                printf("\nPress Enter to continue\n"); 
                 getchar();
                 break;
             case EMI:
-                printf("\nYou selected to calculate EMI for a particular loan amount. Enter your loan amount");
+                printf("\nYou selected to calculate EMI for a particular loan amount. Enter your loan amount\n");
                 scanf("%ld",&amount);
-                printf("\nEnter your loan tenur in years");
+                printf("\nEnter your loan tenur in years\n");
                 scanf("%ld",&number_of_years);
-                printf("\nEnter rate of interest");
+                printf("\nEnter rate of interest\n");
                 scanf("%f",&rate_of_interest);
-                printf("\nPress Enter to continue"); 
                 result=emi(amount,number_of_years,rate_of_interest);
                 printf("\nEMI is %ld\n",result);
-                //fpurge(stdin);
+                printf("\nPress Enter to continue\n"); 
                 getchar();
                 break;
             case 5:
@@ -119,7 +113,6 @@ void financial_calculator_menu(void)
     else
     {
         printf("\n\t---Choice is not implemented yet---\nEnter to continue\n");
-        //fpurge(stdin);
         getchar();
         return;  
     }
