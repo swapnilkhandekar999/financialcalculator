@@ -44,10 +44,16 @@ For employees covered under the Act, the benefit of a lower denomination is give
 #### Reference: https://www.bajajfinserv.in/gratuity-calculator
 
 ## Cost and Features
-![Description](Link to Pic)
--- Content 
+Depending upon the project how well it is built and all the requirements will meet the cost and it can be varied according to the market.
+- Gratuity Calculation : The gratuity_calculation() function takes four arguments as input and the function results into gratuity amount.
+- Fixed deposit maturity calculation : The fixed_deposit() function takes three arguments as input and the function results into maturity amount after specified period.
+- ROI calculation : The roi() function takes three arguments as input and the function results into ROI.
+- EMI Calculation : The emi() function takes three arguments as input and the function results into EMI.
+
+
 ## Defining Our System
-    -- TBD
+![image](https://user-images.githubusercontent.com/42568338/114858827-99f71a80-9e07-11eb-8b49-c74d2555ba39.png)
+
 ## SWOT ANALYSIS
 ![Untitled Workspace (3)](https://user-images.githubusercontent.com/42568338/114152383-dc1de900-993b-11eb-9b55-5654dd1c6739.png)
 
