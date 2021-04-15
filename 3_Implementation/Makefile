@@ -1,8 +1,8 @@
 PROJ_NAME = financialcalculator
 TEST_PROJ_NAME = Test_$(PROJ_NAME)
 BUILD = build
-TEST_OUTPUT = $(BUILD)/Test_$(PROJ_NAME).out
-PROJECT_OUTPUT = $(BUILD)/$(PROJ_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJ_NAME)
+PROJECT_OUTPUT = $(BUILD)/$(PROJ_NAME)
 
 SRC =src/source.c 
 
@@ -25,6 +25,8 @@ else
    endif
 endif
 .PHONY: run clean test doc all
+
+
 
 all:
 	gcc -I $(INC_H) $(SRC) main.c -o $(call FixPath,$(PROJECT_OUTPUT).$(EXEC)) -lm
