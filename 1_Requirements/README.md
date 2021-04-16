@@ -1,4 +1,5 @@
 # Requirements
+## ![Note](https://img.shields.io/badge/Note-Turn%20On%20Light%20Mode%20for%20better%20viewing-fluorescent)
 ## Introduction
 Gratuity is a cash benefit provided by an employer to an employee for the services rendered to the organization. It is paid at the time of retirement, resignation, layoff or termination, provided the employee has completed five years of continuous services before leaving the organization. In certain cases, such as death or disablement, the rule of continuous 5 year service is relaxed.
 
