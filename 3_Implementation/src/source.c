@@ -10,7 +10,6 @@ long int gratuity_calculation(long int P, long int n, long int m,long int e){
         printf("\n passes away or is rendered disabled due to accident or illness.");
         printf("\n In these cases, gratuity must be paid.\n");
     }
-
     if(e==1){
         result = P*((float)15/26)*n;
         return result;

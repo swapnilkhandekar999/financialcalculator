@@ -18,35 +18,48 @@
 #include<stdlib.h>
 
 /**
- * @brief Error values for financial calculator operations
+* @brief computes gratuity amount
  * 
- */
-//typedef enum error_t {
-  //  ERROR_DIV_BY_ZERO = -2, /**< Division by 0 error */
-    //ERROR_NULL_PTR = -1,    /**< Null pointer dereferncing error */
-  //  SUCCESS = 0             /**< Compute operation is successful */
-//}error_t;
-
-/**
-* @brief computes gratuity of teh two complex numbers
- * 
- * @param[in] amount Pointer to amount
- * @param[in] number_of_years Pointer to number_of_years
- * @param[in] number_of_months Pointer to number_of_months
- * @param[out] gratuity_amount Pointer to store gratuity_amount
- * @return error_t SUCCESS if operation is completed successfully. Error value otherwise.
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] number_of_months variable for passing number_of_months
+ * @param[in] eligibility variable for passing eligibility
+ * @param[out] result variable for storing gratuity amount
+ * @return result
  */
 long int gratuity_calculation(long int amount, long int number_of_years, long int number_of_months, long int eligibility);
 
+/**
+* @brief computes fixed deposit maturity amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing fixed deposit maturity amount
+ * @return result
+ */
 long int fixed_deposit(long int amount,long int number_of_years, float rate_of_interest);
 
+/**
+* @brief computes fixed deposit maturity amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing return on investment (ROI) amount
+ * @return result
+ */
 long int roi(long int amount,long int number_of_years, float rate_of_interest);
 
-long int emi(long int amount,long int number_of_years, float rate_of_interest);
-
 /**
- * @brief TODO Add the remaining functions
+* @brief computes fixed deposit maturity amount
  * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing EMI amount
+ * @return result
  */
+long int emi(long int amount,long int number_of_years, float rate_of_interest);
 
 #endif //HEADER_H
