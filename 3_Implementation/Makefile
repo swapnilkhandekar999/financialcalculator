@@ -43,11 +43,12 @@ coverage:
 	gcc -fprofile-arcs -ftest-coverage -I $(INC_H) -I $(INC_T) unity/unity.c test.c $(SRC) -o $(call FixPath, $(TEST_OUTPUT).$(EXEC)) -lm
 	$(call FixPath, ./$(TEST_OUTPUT).$(EXEC))
 	gcov -a $(COV_SRC)
-	$(RM) *.$(EXEC)
+	cd ..
+	$(RM) $(BUILD)/*.$(EXEC)
 	$(RM) *.gcda
 	$(RM) *.gcno
 	$(RM) *.c.gcov
-	$(RM) *.DAT
+	#$(RM) *.DAT
 	$(RM) test.c
 
 
@@ -62,7 +63,7 @@ valgrind:
 	valgrind ./$(TEST_OUTPUT).$(EXEC)
 
 clean:
-	$(RM) *.$(EXEC)
+	$(RM) $(BUILD)/*.$(EXEC)
 	$(RM) *.gcda
 	$(RM) *.gcno
 	$(RM) *.c.gcov
