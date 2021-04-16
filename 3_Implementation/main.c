@@ -33,6 +33,12 @@ int main()
     }
 }
 
+/**
+* @brief displays starting menu to select intended operation
+ * 
+ * @param[in] financial_calculator_operation variable selecting opearation
+ * @return 0
+ */
 void financial_calculator_menu(void)
 {   
     printf("\nSupported Financial Operations\n");
@@ -118,8 +124,13 @@ void financial_calculator_menu(void)
     }
 }
 
+/**
+* @brief Check if the operation is a valid operation
+ * 
+ * @param[in] operation variable selecting opearation
+ * @return 0
+ */
 int valid_operation(int operation)
 {
-    /* Check if the operation is a valid operation */
     return ((GRATUITY <= operation) && (EXIT >= operation)) ? VALID: INVALID;
 }

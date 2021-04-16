@@ -1,6 +1,18 @@
 #include<stdio.h>
 #include<math.h>
+//variable for storing result of operations
 long int result=0;
+
+/**
+* @brief computes gratuity amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] number_of_months variable for passing number_of_months
+ * @param[in] eligibility variable for passing eligibility
+ * @param[out] result variable for storing gratuity amount
+ * @return result
+ */
 long int gratuity_calculation(long int P, long int n, long int m,long int e){
     if(m>=5){n=n+1;}
     if(n<5){
@@ -21,20 +33,44 @@ long int gratuity_calculation(long int P, long int n, long int m,long int e){
     //else {printf("\nPlease try again");return 0;}
 }
 
+/**
+* @brief computes fixed deposit maturity amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing fixed deposit maturity amount
+ * @return result
+ */
 long int fixed_deposit(long int P,long int n, float r){
     result = P*(pow((1+(float)r/100),n));
     return result;
 }
 
+/**
+* @brief computes return on investment (ROI) amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing return on investment (ROI) amount
+ * @return result
+ */
 long int roi(long int P,long int n, float r){
     result = P*(pow((1+(float)r/100),n))-P;
     return result;
 }
 
+/**
+* @brief computes EMI amount
+ * 
+ * @param[in] amount variable for passing amount
+ * @param[in] number_of_years variable for passing number_of_years
+ * @param[in] rate_of_interest variable for passing rate_of_interest
+ * @param[out] result variable for storing EMI amount
+ * @return result
+ */
 long int emi(long int P,long int n, float r){
-    //result = (float)((P*r*(1+r)*n)/((1+r)*n-1));
-    //result= (float)(fixed_deposit(P,n,r))/(12*n);
-    //result=P*(r/12)*((float)pow((1+r/12),n*12)/(pow((1+r/12),(n*12))-1));
     float R=0;
     R=r/1200;
     float N=0;

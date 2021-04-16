@@ -41,7 +41,7 @@ long int gratuity_calculation(long int amount, long int number_of_years, long in
 long int fixed_deposit(long int amount,long int number_of_years, float rate_of_interest);
 
 /**
-* @brief computes fixed deposit maturity amount
+* @brief computes return on investment (ROI) amount
  * 
  * @param[in] amount variable for passing amount
  * @param[in] number_of_years variable for passing number_of_years
@@ -52,7 +52,7 @@ long int fixed_deposit(long int amount,long int number_of_years, float rate_of_i
 long int roi(long int amount,long int number_of_years, float rate_of_interest);
 
 /**
-* @brief computes fixed deposit maturity amount
+* @brief computes EMI amount
  * 
  * @param[in] amount variable for passing amount
  * @param[in] number_of_years variable for passing number_of_years
