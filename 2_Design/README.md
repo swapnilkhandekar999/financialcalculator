@@ -1,4 +1,5 @@
 # Design
+## ![Note](https://img.shields.io/badge/Note-Turn%20On%20Light%20Mode%20for%20better%20viewing-fluorescent)
 
 ## High Level Design 
 ### Architecture Design :
@@ -15,6 +16,7 @@
 ## Low Level Design
 
 
-### State Diagram :
+### Package Diagram :
 
+![image](https://user-images.githubusercontent.com/42568338/114980769-936daf00-9eaa-11eb-82dc-aecd44fb8cd7.png)
 
