@@ -25,7 +25,7 @@ Folder             | Description
 ## Contributors List and Summary
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No of Test Cases|Test Case Pass
 ---------|-------------|----------------|----------------|---------------|-------------|--------------
-`259958` | Swapnil Khandekar  | SC1, SC2, SC3, SC4, SC5, SC6, SC7| 1   | 0  | 26   | 26     
+`259958` | Swapnil Khandekar  | SC1, SC2, SC3, SC4, SC5, SC6, SC7, SC8| 1   | 0  | 4   | 4     
 
 | No |Feature  |
 |--|--|
